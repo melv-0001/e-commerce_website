@@ -57,20 +57,24 @@ export function Navbar() {
           >
             <Search className="h-6 w-6" />
           </button>
-          <button
-            type="button"
-            className="text-foreground transition-colors hover:text-muted-foreground"
-            aria-label="Wishlist"
-          >
-            <Heart className="h-6 w-6" />
-          </button>
-          <button
-            type="button"
-            className="relative text-foreground transition-colors hover:text-muted-foreground"
-            aria-label="Cart"
-          >
-            <ShoppingCart className="h-6 w-6" />
-          </button>
+          <Link href="/shop/favorites">
+            <button
+              type="button"
+              className="text-foreground transition-colors hover:text-muted-foreground"
+              aria-label="Wishlist"
+            >
+              <Heart className="h-6 w-6" />
+            </button>
+          </Link>
+          <Link href="/shop/panier">
+            <button
+              type="button"
+              className="relative text-foreground transition-colors hover:text-muted-foreground"
+              aria-label="Cart"
+            >
+              <ShoppingCart className="h-6 w-6" />
+            </button>
+          </Link>
         </div>
       </div>
     </header>

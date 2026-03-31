@@ -125,7 +125,7 @@ function ProductCard({ product }: { product: Product }) {
           </span>
         )}
 
-        {/* Overlay au survol - avec boutons d'action */}
+        {/* Overlay au survol - avec boutons d'action 
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4">
           <Button className="bg-white text-[#B88E2F] hover:bg-[#B88E2F] hover:text-white px-12">
             Add to cart
@@ -142,6 +142,7 @@ function ProductCard({ product }: { product: Product }) {
             </button>
           </div>
         </div>
+        */}
       </div>
 
       {/* Infos produit */}
