@@ -1,6 +1,14 @@
+"use client"
 import Image from "next/image";
+import {Hero} from "@/components/my_components/hero";
+import { Navbar } from "@/components/my_components/Navbar";
+import { BrowseRange } from "@/components/my_components/browse-range";
+import { Products } from "@/components/my_components/products";
+import { Inspiration } from "@/components/my_components/inspiration";
+import { Footer } from "@/components/my_components/footer";
 
-export default function Home() {
+
+/*export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
@@ -61,5 +69,21 @@ export default function Home() {
         </div>
       </main>
     </div>
+  );
+}*/
+
+
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <BrowseRange />
+      <Products />
+      <Inspiration />
+      <Footer />  
+      
+    </>
   );
 }
